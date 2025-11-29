@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       build: {
         outDir: 'lib',
         lib: {
-          entry: path.resolve(__dirname, 'App.tsx'),
+          entry: path.resolve(__dirname, 'index.tsx'),
           name: 'BackyardApp',
           formats: ['es'],
           fileName: () => 'index.js'
@@ -35,7 +35,11 @@ export default defineConfig(({ mode }) => {
             }
           }
         },
+        minify: 'terser',
         cssCodeSplit: false
+      },
+      define: {
+        'process.env.NODE_ENV': JSON.stringify('production')
       }
     };
 });
