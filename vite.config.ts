@@ -10,14 +10,32 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        outDir: 'lib',
+        lib: {
+          entry: path.resolve(__dirname, 'App.tsx'),
+          name: 'BackyardApp',
+          formats: ['es'],
+          fileName: () => 'index.js'
+        },
+        rollupOptions: {
+          external: ['react', 'react-dom', 'react-router-dom', 'react-markdown', 'lucide-react'],
+          output: {
+            globals: {
+              react: 'React',
+              'react-dom': 'ReactDOM',
+              'react-router-dom': 'ReactRouterDOM',
+              'react-markdown': 'ReactMarkdown',
+              'lucide-react': 'LucideReact'
+            }
+          }
+        },
+        cssCodeSplit: false
       }
     };
 });
