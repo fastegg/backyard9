@@ -112,13 +112,12 @@ const Layout: React.FC<Props> = ({ onOpenSettings }) => {
       {/* Footer */}
       <footer className="bg-stone-900 text-stone-400 py-8 border-t border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-4 md:mb-0 text-center md:text-left">
             <span className="font-serif text-lg text-stone-200">Backyard 9</span>
-            <p className="text-sm mt-1">Building the dream, one shovel at a time.</p>
+            <p className="text-sm mt-1 text-stone-500 max-w-md">Tee Time in a Tiny Space: A dad's guide to building the backyard golf simulator.</p>
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="mailto:fastegg@gmail.com" className="hover:text-white transition-colors">Contact</a>
-            <Link to="/goals" className="hover:text-white transition-colors">Goals</Link>
             <span className="text-stone-600">© {new Date().getFullYear()}</span>
           </div>
         </div>

@@ -40,7 +40,7 @@ We want this to be a place where friends can come over, grab a wedge, and have a
       date: '2023-09-02',
       category: 'goals',
       excerpt: 'What we are aiming for with this renovation.',
-      image: 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1600&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1600&auto=format&fit=crop'
     }
   },
   {

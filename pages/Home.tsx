@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             Welcome to the <span className="text-golf-400">Backyard 9</span>
           </h1>
           <p className="text-xl md:text-2xl text-stone-200 max-w-2xl mb-10 font-light">
-            Documenting the journey of turning a wild backyard into a premier short-game practice facility.
+            Tee Time in a Tiny Space: A dad's guide to building the backyard golf simulator.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
